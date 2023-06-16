@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" id="test">
+    
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ndtv.css">
+    <script src="https://kit.fontawesome.com/fcd517a9c6.js" crossorigin="anonymous"></script>
+    <script src="ndtv.js"></script>
+</head>
+
+<body id="root" onload="loding()">
+    <div id="menutime">
+        <section class="sec1">
+            <img src="/images/2131910.png" alt="" style="width:100px;">
+            <i class="fa-solid fa-circle-xmark" onclick="menuclose()" style="font-size: 25px;cursor: pointer;"></i>
+        </section>
+        <section>
+            <input type="search" name="" id="search" placeholder="        Search for News,Photos and Videos">
+        </section>
+        <section id="login">
+            <h1>Login <i onclick="loginclose()" class="fa-solid fa-xmark"></i></h1>
+            <input type="text" required>
+            <br>
+            <input type="password" required name="pass" id="" >
+            <p><i class="fa-solid fa-unlock-keyhole"></i><a href="">Forgot Password</a> 
+                <span><a href="">Continue</a></span>
+            </p>   
+        </section>
+        <section id="signin">
+            <h1>Sign Up <i onclick="signinclose()" class="fa-solid fa-xmark"></i></h1>
+            <input type="text" required>
+            <br>
+            <input type="password" name="pass" id="">
+            <p><span><a href="#" onclick="loginpage()">Login</a></span><span><a href="">Sign Up</a></span></p>
+        </section>
+        <section class="language">
+            <p>SELECT LANGUAGE</p>
+            <p onclick="login()" style="cursor: pointer;">Login  <i class="fa-solid fa-right-to-bracket"></i></p>
+            
+        </section>
+        <section class="lan">
+            <ul>
+                <li><a href="">ENGLISH</a></li>
+                <li><a href="">हिंदी</a></li>
+            </ul>
+        </section>
+        <section class="news">
+            <p>NEWS UPDATES</p>
+        </section>
+        <section class="newslinks">
+            <ul style="border-right: 1px solid gray;">
+                <li><a class="at" href="#"><img src="/images/icons8-coronavirus-64.png" alt=""> Coronavirus</a></li>
+                <li><a class="at" href="#"><img src="/images/icons8-building-64.png" alt=""> Latest</a></li>
+                <li><a class="at" href="#"><img src="/images/Video_icon2017.png" alt="">Video</a></li>
+                <li><a class="at" href="#"><img src="/images/icons8-smartphone-tablet-64.png" alt=""> Gadgets</a></li>
+            </ul>
+            <ul>
+                <li><a href="Live-Tv.html"><img src="/images/icons8-tv-64.png" alt=""> Live TV</a></li>
+                <li><a href=""><img src="/images/icons8-car-rims-64.png" alt=""> India</a></li>
+                <li><a href=""><img src="/images/icons8-cricket-64.png" alt=""> Cricket</a></li>
+                <li><a href=""><img src="/images/icons8-film-reel-64.png" alt=""> Movies</a></li>
+            </ul>
+        </section>
+        <p style="margin: 20px;font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid gray;">FEATURED LINKS
+        </p>
+        <section class="featuredlinks">
+            <ul style="border-right: 1px solid gray;">
+                <li><a href=""><img src="/images/icons8-shopping-bag-64.png" alt=""> Shopping</a></li>
+                <li><a href=""><img src="/images/icons8-cryptography-64.png" alt=""> Cryptocurrency</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><img src="/images/icons8-web-64.png" alt=""> Web Stories</a></li>
+                <li><a href=""><img src="/images/icons8-crossword-64.png" alt=""> Crossword</a></li>
+            </ul>
+        </section>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin: 20px;border-bottom: 1px solid gray;">MORE LINKS</p>
+        <section class="morelinks">
+            <ul style="border-right: 1px solid gray;">
+                <li><a href=""><img src="/images/icons8-geography-64.png" alt=""> World</a></li>
+                <li><a href=""><img src="/images/icons8-visit-64.png" alt=""> Cities</a></li>
+                <li><a href=""><img src="/images/icons8-public-opinion-64.png" alt=""> Opinion</a></li>
+                <li><a href=""><img src="/images/icons8-elections-64.png" alt=""> Elections</a></li>
+                <li><a href=""><img src="/images/icons8-spoon-and-fork-64.png" alt=""> Food</a></li>
+                <li><a href=""><img src="/images/icons8-reading-64.png" alt=""> Education</a></li>
+                <li><a href=""><img src="/images/icons8-bookmark-64.png" alt=""> Swirlster</a></li>
+                <li><a href=""><img src="/images/icons8-trophy-64.png" alt=""> Sports</a></li>
+                <li><a href=""><img src="/images/icons8-weather-64.png" alt=""> Weather</a></li>
+                <li><a href=""><img src="/images/icons8-train-64.png" alt=""> trains</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><img src="/images/icons8-tesla-model-3-64.png" alt=""> Auto</a></li>
+                <li><a href=""><img src="/images/icons8-lotus-64.png" alt=""> South</a></li>
+                <li><a href=""><img src="/images/icons8-bell-64.png" alt=""> Notification</a></li>
+                <li><a href=""><img src="/images/icons8-stocks-growth-64.png" alt=""> Business</a></li>
+                <li><a href=""><img src="/images/icons8-medical-doctor-64.png" alt=""> Doctor NDTV</a></li>
+                <li><a href=""><img src="/images/icons8-globe-64.png" alt=""> Science</a></li>
+                <li><a href=""><img src="/images/Photo_icon2017.png" alt="">Photos</a></li>
+                <li><a href=""><img src="/images/icons8-people-64.png" alt=""> People</a></li>
+                <li><a href=""><img src="/images/icons8-calendar-64.png" alt=""> TV Schedule</a></li>
+                <li><a href=""><img src="/images/icons8-easel-64.png" alt=""> Art</a></li>
+            </ul>
+        </section>
+        <p style="font-family: Arial, Helvetica, sans-serif; margin: 20px;border-bottom: 1px solid gray;">FOLLOW US ON
+        </p>
+        <section class="followuslinks">
+            <ul style="border-right: 1px solid gray;">
+                <li><a href=""><img src="/images/icons8-facebook-f-64.png" alt=""> Facebook</a></li>
+                <li><a href=""><img src="/images/icons8-instagram-64.png" alt=""> Instagram</a></li>
+                <li><a href=""><img src="/images/icons8-youtube-64.png" alt=""> Youtube</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><img src="/images/icons8-twitter-64.png" alt=""> Twiter</a></li>
+                <li><a href=""><img src="/images/icons8-linkedin-2-64.png" alt=""> Linkedin</a></li>
+            </ul>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="navpanal">
+        <div class="shadow" id="shadow">
+
+            <div class="navbar">
+                <ul>
+                    <li><i style="cursor: pointer;" class="fa-sharp fa-solid fa-bars" onclick="redirect()" ></i></li>
+                    <li><img id="logoblack" src="/images/NDTV-01.png" alt="logo"><img id="logowhite" src="/images/2131947.png" alt=""></li>
+                </ul>
+                <ul>
+                    <li><a href=""style="text-decoration: none; display: flex; align-items:center; font-family: Arial, Helvetica, sans-serif ;font-weight: 600;">CROSSWORD <img src="/images/icons8-crossword-64.png" style="width: 30px;" alt=""></a>
+                    </li>
+                    <li><i class="fa-solid fa-bell fa-shake" style="cursor: pointer;" onclick="bell()"></i></li>
+                    <li><i id="dark" class="fa-solid fa-circle-half-stroke"  onclick="dark()" ondblclick="light()"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+                <ul id="bell">
+                    <li>
+                        <p>News alerts are turned off.</p>
+                    </li>
+                    <br>
+                    <li><button>click here</button>
+                        <p>turn on.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">
+                <ul style="width: 30px;z-index: 2;">
+                    <li">
+                    <a href="ndtv.html"><i class="fa-solid fa-house" style="cursor: pointer;"></i></a>
+                        </li>
+                </ul>
+                <ul style="margin-left: 10px;z-index: 1;">
+                    <!-- <li style="margin-right: 10px;"><i class="fa-solid fa-house"></i></li> -->
+                    <!-- <li style="color: gray;">|</li> -->
+                    <li><a href="Live-Tv.html">LiveTV</a></li>
+                    <li style="color: gray;">|</li>
+                    <li><a href="">TopNews</a></li>
+                    <li style="color: gray;">|</li>
+                    <li><a href="">India</a></li>
+                    <li style="color: gray;">|</li>
+                    <li><a href="">Latest</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Video</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Opinion</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Cities</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Movies</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Tech</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Sports</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Covid</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Offbeat</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Shopoing</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Weather</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Swirlster</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Health</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">TVSchedule</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Trending</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Photos</a></li>
+                    <li style="color:gray;">|</li>
+                    <li><a href="">Apps</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="headline">
+            <div>
+                <h1>Khalistani Leader Amritpal Singh Yet To Be Arrested, Punjab On High Alert</h1>
+                <video autoplay loop src="/images/650x319_0937175.mp4"></video>
+            </div>
+            <h1>Arrest Warrant Against Putin For Alleged War Crimes In Ukraine</h1>
+            <img src="/images/gil0pvco_putin-getty_650x400_18_March_23.jpg" alt="">
+        </section>
+        <section class="content" id="content">
+            <ul>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/114b5idk_imran-khan-gas-mask_120x90_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/51qaot88_sandeep-shastri-240_120x90_13_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/4g1r47ro_ram_120x90_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/4kjuopho_rishi-sunak-afp-240-_240x180_06_March_23(1).jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/5mhue2sg_indonesia-school_625x300_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/7o9eg3h_uthappa-3-sixes_625x300_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/8f3td88g_arsenal-players-afp_625x300_02_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/1v7f5p8g_columbia-university-_120x90_04_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/51qaot88_sandeep-shastri-240_120x90_13_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/87th819_rakul-preet_120x90_15_March_23.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="ads">
+            <p>advertisment</p>
+            <img src="/images/3ee9b1aef1b17c8bcdacfd1be75e15b9.jpg" alt="">
+        </section>
+        <section class="videos">
+            <div>
+                <br>
+                <h1><i class="fa-solid fa-video" style="cursor: pointer;"></i> &ensp; VIDEO</h1>
+                <br>
+                <ul>
+                    <li><img src="/images/22mefs8_diksha-mishra-posted-a-picture-of-akasa-air-cabin-crew-member-_120x90_15_March_23.jpg" alt="image"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id nam cupiditate in impedit odio.</p></li>
+                    <li><img src="/images/IMG_20230204_174833.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/spc70fng_temjen-imna-along-is-social-medias-favourite_120x90_15_March_23.jpg" alt="NDTV"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/ti8nj6r_work-from-home_240x180_22_May_20.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/vb4ksvv8_lodha-group-property-240_120x90_15_March_23.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/vivo-y16-db-240x180-1661750236.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/tvq44l5g_bhopal-employment-office_625x300_15_March_23.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/tv86bdqg_uddhav-thackeray-eknath-shinde_650x400_10_October_22.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="headline">
+            <!-- <div>
+                <h1>Khalistani Leader Amritpal Singh Yet To Be Arrested, Punjab On High Alert</h1>
+                <video autoplay loop src="650x319_0937175.mp4"></video>
+            </div> -->
+            <h1>Pro skill ke students Pr Ram sir ne kiya Atyachar </h1>
+            <img src="/images/IMG_20230319_164142.jpg" alt="">
+        </section>
+        <section class="content">
+            <ul>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/114b5idk_imran-khan-gas-mask_120x90_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/51qaot88_sandeep-shastri-240_120x90_13_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/4g1r47ro_ram_120x90_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/4kjuopho_rishi-sunak-afp-240-_240x180_06_March_23(1).jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/5mhue2sg_indonesia-school_625x300_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/7o9eg3h_uthappa-3-sixes_625x300_15_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/8f3td88g_arsenal-players-afp_625x300_02_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/1v7f5p8g_columbia-university-_120x90_04_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/51qaot88_sandeep-shastri-240_120x90_13_March_23.jpg" alt="">
+                </li>
+                <li>
+                    <a href="">Watch: Imaran Khan Steps Out Of Home Wearing Gas Mask As Cops Withdraw</a>
+                    <img src="/images/87th819_rakul-preet_120x90_15_March_23.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="ads">
+            <p>advertisment</p>
+            <img src="/images/4f0c8843ecad042f0b000013.webp" alt="">
+        </section>
+        <section class="videos">
+            <div>
+                <br>
+                <h1><i class="fa-solid fa-video" style="cursor: pointer;"></i> &ensp; Sports</h1>
+                <br>
+                <ul>
+                    <li><img src="/images/download.jpeg" alt="image"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id nam cupiditate in impedit odio.</p></li>
+                    <li><img src="/images/qjxgsf7pqdmyqzsptxju.webp" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/badminton-grass-racket-115016.webp" alt="NDTV"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/zwGIXP0CMB.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/SONYAI_GTSophy_RaceTogether.webp" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/golfstratton.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/download (1).jpeg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                    <li><img src="/images/MMSC-set-to-host-India’s-biggest-bike-racing-weekend.jpg" alt="image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis praesentium veritatis in accusamus earum totam.</p></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <h3>Quck links <i class="fa-solid fa-link"></i></h3>
+        <div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">LiveTv</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">हिंदी</a></li>
+                <li><a href="">India</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Opinion</a></li>
+                <li><a href="">Food</a></li>
+                <li><a href="">Swirlster</a></li>
+                <li><a href="">Health</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Photos</a></li>
+                <li><a href="">Cities</a></li>
+                <li><a href="">Cities</a></li>
+            </ul>
+        </div>
+        <p>This Website followss the DNPA Code of Ethics <img src="/images/icons8-circled-c-48.png"
+                style="width: 20px;margin-left: 2px;" alt=""></p>
+        <h5>Copyright NDTV Convergence Limited 2023. All rights reserved.</h5>
+    </footer>
+    <button type="button" onclick="scrollWin()" id="scroll" >
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+
+
+    <section class="bottomnavbar" id="bottomnavbar">
+        <ul>
+            <li><i class="fa-solid fa-house-chimney"></i><p>Home</p></li>
+            <li><i class="fa-solid fa-photo-film"></i><p>Video</p></li>
+            <li><i class="fa-sharp fa-solid fa-tv"></i><p>Live</p></li>
+            <li><i class="fa-solid fa-camera"></i><p>Reels</p></li>
+            <li onclick="redirect()"><i class="fa-solid fa-bars"></i><p>Menu</p></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
